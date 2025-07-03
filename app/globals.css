@@ -1,26 +1,137 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --themeGray: #e5e5e5;
+  --themeYellow: #fca311;
+  --themeBlue: #3772ff;
+  --themeRed: #df2935;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-themeGray: var(--themeGray);
+  --color-themeYellow: var(--themeYellow);
+  --color-themeBlue: var(--themeBlue);
+  --color-themeRed: var(--themeRed);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.h1-shadow {
+  color: black;
+  transform: translate(2%, 5%);
+}
+
+.char-stroke {
+  text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black,
+    -2px 2px 0 black;
+}
+
+.intro-chars {
+  opacity: 0.2;
+}
+
+.intro-words {
+  margin-right: 4px;
+}
+
+.intro-lines {
+  margin-bottom: 8px;
+}
+
+.circle-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  clip-path: circle(0% at 50% 50%);
+
+  z-index: 20;
+}
+
+.under-line {
+  transform: scaleX(0);
+  transform-origin: left;
+  height: 1px;
+  background-color: "white";
+}
+
+.txt-1-bg {
+  background-color: var(--themeYellow);
+  clip-path: ellipse(40% 0% at 50%);
+}
+
+.txt-2-bg {
+  border-radius: 10px;
+  background-color: var(--themeRed);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+}
+
+.txt-3-bg {
+  border-radius: 20px;
+  background-color: var(--themeBlue);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+}
+
+.txt-4-bg {
+  border-radius: 40px;
+  background-color: var(--themeYellow);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+}
+
+.skill-line {
+  transform: scaleX(1);
+  transform-origin: left;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+
+.end-lines {
+  margin-bottom: 8px;
+}
+
+/* header */
+.menu-btns {
+  left: 100%;
+  top: 0%;
+}
+
+.menuLine-1 {
+  position: absolute;
+  width: 36px;
+  height: 2px;
+  left: 20%;
+  top: 40%;
+}
+
+.menuLine-2 {
+  position: absolute;
+  width: 36px;
+  height: 2px;
+  left: 20%;
+  top: 60%;
+}
+
+.dropdown-menu {
+  border-radius: 8px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+  background-color: var(--themeYellow);
+}
+
+footer {
+  z-index: -10;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
 }
