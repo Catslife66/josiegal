@@ -69,7 +69,7 @@ export default function IntroSection() {
                 >
                   <div className="flex flex-col">
                     <span className="expSpan py-4 text-sm">{exp.time}</span>
-                    <div className="under-line"></div>
+                    <div className="under-line bg-white"></div>
                   </div>
                   <div className="expSpan text-2xl font-semibold mt-2">
                     {exp.workplace}
