@@ -4,6 +4,7 @@ import ThemeProvider from "./themeProvider";
 import SmoothScroll from "./components/SmoothScroll";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Cursor from "./components/Cursor";
 
 export const libreFranklin = Libre_Franklin({
   subsets: ["latin"],
@@ -23,11 +24,10 @@ export default function RootLayout({ children }) {
       <ThemeProvider>
         <body className={`${libreFranklin.className}`}>
           <SmoothScroll>
-            <div className="relative">
-              <Header />
-              {children}
-              <Footer />
-            </div>
+            <Cursor />
+            <Header />
+            {children}
+            <Footer />
           </SmoothScroll>
         </body>
       </ThemeProvider>

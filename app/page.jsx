@@ -4,9 +4,7 @@ import { useContext } from "react";
 import { ThemeContext } from "@/app/themeProvider";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import SplitText from "gsap/SplitText";
 import Observer from "gsap/Observer";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 import HeroSection from "./sections/HeroSection";
 import IntroSection from "./sections/IntroSection";
@@ -201,24 +199,24 @@ export default function Home() {
       },
     });
 
-    const footer = document.querySelector("footer");
     const endTl = gsap.timeline({
       scrollTrigger: {
         trigger: "#endWrapper",
-        start: "top bottom",
-        end: `+=${footer.clientHeight}`,
+        start: "top 70%",
+        end: "top 50%",
         scrub: true,
       },
     });
-
-    endTl.to(["#endWrapper", "#projectWrapper"], {
-      y: -`${footer.clientHeight}`,
-      ease: "none",
+    endTl.from(".end-lines", {
+      yPercent: 100,
+      stagger: {
+        each: 0.5,
+      },
     });
   }, {});
 
   return (
-    <div id="mainWrapper" className="overflow-x-hidden z-10 top-0">
+    <div id="mainWrapper" className="overflow-x-hidden z-[10] top-0">
       <div
         id="heroIntroWrapper"
         className="relative overflow-x-hidden bg-themeGray"
@@ -227,7 +225,6 @@ export default function Home() {
         <IntroSection />
       </div>
       <SkillSection />
-
       <ProjectSection />
       <EndSection />
     </div>

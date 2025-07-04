@@ -117,21 +117,16 @@ export default function ProjectSection() {
                     : "border-t-1"
                 }`}
               >
-                <div
-                  className="hidden md:block"
-                  style={{
-                    width: "250px",
-                  }}
-                >
+                <div className="hidden md:block">
                   <Image
-                    className="projectImg rounded-lg origin-left"
+                    className="projectImg origin-left"
                     src={project.mainImg.src}
                     width={150}
                     height={150}
                     alt={project.mainImg.alt}
                     style={{
                       objectFit: "cover",
-                      borderRadius: "8px",
+                      objectPosition: "center",
                     }}
                   />
                 </div>

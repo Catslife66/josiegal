@@ -19,9 +19,6 @@
   }
 }
 
-body {
-}
-
 .h1-shadow {
   color: black;
   transform: translate(2%, 5%);
@@ -124,10 +121,6 @@ body {
   border-radius: 8px;
   clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
   background-color: var(--themeYellow);
-}
-
-footer {
-  z-index: -10;
 }
 
 @media (min-width: 768px) {

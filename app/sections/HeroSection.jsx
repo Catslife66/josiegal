@@ -19,6 +19,7 @@ export default function HeroSection() {
         gsap.from(self.lines, {
           y: 200,
           stagger: 0.05,
+          delay: 0.1,
         });
       },
     });

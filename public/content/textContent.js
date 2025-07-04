@@ -89,8 +89,8 @@ export const skillsetContent = [
 export const projectCaseContent = [
   {
     num: "01",
-    slug: "southern-airlines-pearl-hotel-booking-mini-programme",
-    name: "Southern Airlines Pearl Hotel Booking Mini Programme",
+    slug: "china-southern-airlines-pearl-hotel-booking-mini-programme",
+    name: "China Southern Airlines Pearl Hotel Booking Mini Programme",
     description:
       "Led the conceptualisation, development, and implementation of the China Southern Airlines Pearl Hotel Booking Mini Programme on WeChat, creating a robust and convenient direct booking channel for hotel customers. Please view the project detail and find a Figma prototype link to simulate the whole mini-programme user experience.",
     tags: [
@@ -104,7 +104,7 @@ export const projectCaseContent = [
     location: "Guangzhou, China",
     role: "Project creation and implementation",
     mainImg: {
-      src: "/images/mini-programme-cover.png",
+      src: "/images/peanut-icon-1.png",
       alt: "an image of Southern Airlines Pearl Hotel logo",
     },
     bannerImg: {
@@ -172,8 +172,8 @@ export const projectCaseContent = [
   },
   {
     num: "02",
-    slug: "independent-financial-advisor-company-website-redesign",
-    name: "Independent Financial Advisor Company Website Redesign",
+    slug: "financial-advisor-company-website-redesign",
+    name: "Financial Advisor Company Website Redesign",
     description:
       "Successfully executed a comprehensive website redesign and content migration for Argyle Consulting Company, utilising WordPress to deliver a modern, engaging, and user-friendly online presence.",
     tags: ["WordPress", "CMS", "UX Design", "Financial Services", "Elementor"],
@@ -181,7 +181,7 @@ export const projectCaseContent = [
     location: "Falkirk, UK",
     role: "UI improvements",
     mainImg: {
-      src: "/images/argyle-website.png",
+      src: "/images/peanut-icon-2.png",
       alt: "argyle consulting website illustration",
     },
     bannerImg: {
@@ -262,12 +262,12 @@ export const projectCaseContent = [
     location: "Falkirk, UK",
     role: "project designer",
     mainImg: {
-      src: "/images/mini-programme-cover.png",
-      alt: "my portfolio website illustration",
+      src: "/images/peanut-icon-3.png",
+      alt: "my portfolio website icon",
     },
     bannerImg: {
-      src: "/images/argyle-website-illustration.jpg",
-      alt: "argyle consulting website illustration",
+      src: "/images/portfolio-website-banner.jpg",
+      alt: "my portfolio website illustration",
     },
     objectives: [
       {
@@ -308,7 +308,7 @@ export const projectCaseContent = [
       },
     ],
 
-    githubLink: "https://github.com/Catslife66/josiedev",
+    githubLink: "https://github.com/Catslife66/josiegal",
     liveSite: "",
   },
 ];

@@ -70,7 +70,7 @@ export default function Header() {
   };
 
   return (
-    <nav className="fixed top-0 z-100 w-full grid grid-cols-12 py-2">
+    <nav className="fixed top-0 z-[20] w-full grid grid-cols-12 py-2">
       <div className="col-span-10 col-start-2 relative">
         <div className="flex flex-row items-center justify-between">
           <Link href={"/"} className="corsur-pointer p-2">
@@ -87,13 +87,13 @@ export default function Header() {
           <div className="flex flex-row space-x-8 overflow-x-hidden">
             <div className="menu-btns hidden space-x-2 relative px-4 md:flex md:flex-row">
               <Link
-                className="px-4 rounded-4xl bg-black flex justify-center items-center text-white text-sm font-semibold"
+                className="px-4 rounded-4xl bg-black flex justify-center items-center text-white text-sm font-semibold hover:text-themeYellow"
                 href={"/files/xiaohong-zhuang-cv.pdf"}
               >
                 Download CV
               </Link>
               <Link
-                className="px-4 rounded-4xl bg-black flex justify-center items-center text-white text-sm font-semibold"
+                className="px-4 rounded-4xl bg-black flex justify-center items-center text-white text-sm font-semibold hover:text-themeYellow"
                 href={"mailto:josie58@live.cn"}
               >
                 Contact Me
