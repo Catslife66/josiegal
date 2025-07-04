@@ -59,6 +59,12 @@ export const skillsetContent = [
     ],
   },
   {
+    title: "DevOps & Deployment",
+    description:
+      "I manage the deployment and delivery of applications using Docker to ensure consistency across environments. I work with cloud infrastructure to support scalability, use Git for version control, and implement CI/CD workflows to streamline releases and updates. I also design and build websites using WordPress, creating custom templates and handling site redesigns.",
+    skills: ["Docker, Kubernetes, AWS", "Nginx, Git, CMS Development"],
+  },
+  {
     title: "UI/UX & 3D Web Development",
     description:
       "Combining my strong design intuition from a marketing background with technical expertise, I create visually engaging interfaces using Tailwind CSS and Bootstrap 5. I also have foundational experience in Three.js (R3F, Drei) & Spline, allowing me to integrate 3D elements & interactive experiences into web applications.",
@@ -67,12 +73,6 @@ export const skillsetContent = [
       "Tailwind CSS, Bootstrap 5",
       "Strong design intuition from marketing experience",
     ],
-  },
-  {
-    title: "DevOps & Deployment",
-    description:
-      "I manage the deployment and delivery of applications using Docker to ensure consistency across environments. I work with cloud infrastructure to support scalability, use Git for version control, and implement CI/CD workflows to streamline releases and updates. I also design and build websites using WordPress, creating custom templates and handling site redesigns.",
-    skills: ["Docker, Kubernetes, AWS", "Nginx, Git, CMS Development"],
   },
   {
     title: "Branding, Marketing & Content Strategy",
