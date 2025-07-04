@@ -124,10 +124,6 @@ export default function Home() {
 
           const y = self.progress < 0.85 ? 100 : 0;
           gsap.to(".expSpanLines", { yPercent: y, stagger: 0.1 });
-
-          const color =
-            self.progress >= 0.98 ? "black" : theme.themeColors.themeGray;
-          gsap.to(".under-line", { backgroundColor: color });
         },
       },
     });
