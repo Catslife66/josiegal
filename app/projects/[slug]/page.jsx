@@ -14,7 +14,7 @@ export default function ProjectDetail(props) {
   return (
     <div className="W-full grid grid-cols-12 bg-black text-white">
       <div className="col-span-10 col-start-2 grid grid-cols-subgrid pt-[12rem] pb-[8rem]">
-        <div className="col-span-5 flex flex-col space-y-8">
+        <div className="col-span-10 flex flex-col space-y-8 mb-8 md:col-span-5 md:mb-0">
           <h2 className="uppercase text-4xl font-black">{project.name}</h2>
           <div className="flex flex-row flex-wrap">
             {project.tags.map((tag, i) => (
@@ -25,7 +25,7 @@ export default function ProjectDetail(props) {
             ))}
           </div>
         </div>
-        <div className="col-span-4 col-end-11 grid grid-cols-5">
+        <div className="col-span-10 md:col-span-4 md:col-end-11 grid grid-cols-5">
           <div className="col-span-2 border-t-1 content-center">Year</div>
           <div className="col-span-3 border-t-1 content-center">
             {project.year}
@@ -59,61 +59,59 @@ export default function ProjectDetail(props) {
       </div>
 
       <div className="col-span-10 col-start-2">
-        <p className="text-3xl font-semibold text-center py-[4rem]">
+        <p className="text-2xl font-semibold text-center py-[4rem] md:text-3xl">
           {project.description}
         </p>
       </div>
 
       <div className="col-span-10 col-start-2 grid grid-cols-subgrid py-[4rem]">
-        <div className="col-span-3 mb-[4rem]">
+        <div className="col-span-10 mb-8 md:col-span-3 md:mb-[4rem]">
           <h3 className="text-2xl pb-2 w-fit border-b-1">Objectives</h3>
         </div>
-        <div className="col-span-7 mb-[4rem]">
+        <div className="col-span-10 mb-8 md:col-span-7 md:mb-[4rem]">
           {project.objectives.map((obj, idx) => (
-            <div key={idx} className="flex flex-row space-x-4 mb-4 text-xl">
-              <span className="">{obj.order}</span>
-              <p className="">{obj.content}</p>
+            <div key={idx} className="flex flex-row space-x-4 mb-4">
+              <span className="text-lg">{obj.order}</span>
+              <p className="text-xl">{obj.content}</p>
             </div>
           ))}
         </div>
 
-        <div className="col-span-3">
+        <div className="col-span-10 mb-8 md:col-span-3 md:mb-0">
           <h3 className="text-2xl pb-2 w-fit border-b-1">Features</h3>
         </div>
-        <div className="col-span-7">
+        <div className="col-span-10 mb-8 md:col-span-7 md:mb-0">
           {project.features.map((feature, idx) => (
-            <div key={idx} className="flex flex-row space-x-4 mb-4 text-xl">
-              <span className="">{feature.order}</span>
-              <p>{feature.content}</p>
+            <div key={idx} className="flex flex-row space-x-4 mb-4">
+              <span className="text-lg">{feature.order}</span>
+              <p className="text-xl">{feature.content}</p>
             </div>
           ))}
         </div>
       </div>
 
-      <div
-        className="col-span-12"
-        style={{ position: "relative", height: "60vh", width: "100%" }}
-      >
+      <div className="relative col-span-12 w-full h-[30vh] md:h-[50vh]">
         <Image
           src={project.bannerImg.src}
           alt={project.bannerImg.alt}
           fill={true}
+          priority={true}
           sizes="(min-width: 768px) 100vw"
           style={{
-            objectFit: "contain",
+            objectFit: "cover",
           }}
         />
       </div>
 
       <div className="col-span-10 col-start-2 grid grid-cols-subgrid py-[4rem]">
-        <div className="col-span-3 mb-[4rem]">
+        <div className="col-span-10 mb-8 md:col-span-3 md:mb-0">
           <h3 className="text-2xl pb-2 w-fit border-b-1">Outcomes</h3>
         </div>
-        <div className="col-span-7">
+        <div className="col-span-10 mb-8 md:col-span-7 md:mb-0">
           {project.outcomes.map((outcome, idx) => (
-            <div key={idx} className="flex flex-row space-x-4 mb-4 text-xl">
-              <span className="">{outcome.order}</span>
-              <p className="">{outcome.content}</p>
+            <div key={idx} className="flex flex-row space-x-4 mb-4">
+              <span className="text-lg">{outcome.order}</span>
+              <p className="text-xl">{outcome.content}</p>
             </div>
           ))}
         </div>
@@ -121,7 +119,7 @@ export default function ProjectDetail(props) {
 
       <div className="col-span-10 col-start-2 py-[4rem]">
         <Link
-          className="w-full flex flex-row items-center justify-center text-3xl text-center"
+          className="w-full flex flex-col items-center justify-center text-2xl text-center md:flex-row md:text-3xl"
           href={project.liveSite ? project.liveSite : project.githubLink}
         >
           <span>
@@ -161,7 +159,7 @@ export default function ProjectDetail(props) {
                 </svg>
               </span>
             </div>
-            <h4 className="uppercase text-2xl font-bold mt-4 pr-[4rem]">
+            <h4 className="uppercase text-xl font-bold mt-4 pr-4 md:text-2xl md:pr-[4rem]">
               {proj.name}
             </h4>
           </Link>

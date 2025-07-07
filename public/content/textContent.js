@@ -302,7 +302,7 @@ export const projectCaseContent = [
     ],
     outcomes: [
       {
-        order: "",
+        order: "01",
         content:
           "The final site is a polished, animated, and technically rich portfolio that clearly communicates my strengths as a developer with frontend and backend skills. It demonstrates a strong understanding of modern JavaScript frameworks, animation libraries, responsive design, and project structure.",
       },
