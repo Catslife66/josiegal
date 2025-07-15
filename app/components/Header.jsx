@@ -70,7 +70,7 @@ export default function Header() {
   };
 
   return (
-    <nav className="fixed top-0 z-[20] w-full grid grid-cols-12 py-2">
+    <nav className="fixed top-0 z-[50] w-full grid grid-cols-12 py-2">
       <div className="col-span-10 col-start-2 relative">
         <div className="flex flex-row items-center justify-between">
           <Link href={"/"} className="corsur-pointer p-2">
