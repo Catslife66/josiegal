@@ -1,8 +1,14 @@
+"use client";
+
 import { use } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { projectCaseContent } from "@/public/content/textContent";
+
+gsap.registerPlugin(useGSAP);
 
 export default function ProjectDetail(props) {
   const params = use(props.params);
@@ -10,6 +16,12 @@ export default function ProjectDetail(props) {
   const project = projectCaseContent.find((p) => p.slug === slug);
   const otherProjects = projectCaseContent.filter((p) => p.slug !== slug);
   if (!project) return notFound();
+
+  useGSAP(() => {
+    gsap.to(".menuLine", {
+      backgroundColor: "#e5e5e5",
+    });
+  }, {});
 
   return (
     <div className="W-full grid grid-cols-12 bg-black text-white">
