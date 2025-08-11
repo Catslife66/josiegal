@@ -51,7 +51,7 @@ export const skillsetContent = [
   {
     title: "Full-Stack Development",
     description:
-      "I specialise in building scalable web applications using React, Next.js for dynamic front-end experiences, while leveraging Django and Node.js for robust back-end solutions. With experience in PostgreSQL and MongoDB, I design efficient database structures to support data-driven applications.",
+      "I specialise in building scalable web applications with React and Next.js for responsive, interactive frontends, paired with Django and Node.js for secure, high-performance backends. Using PostgreSQL and MongoDB, I design optimised database schemas and queries that ensure fast, reliable data handling.",
     skills: [
       "JavaScript, Node.js, Next.js, React, Redux",
       "Python, Django, Django REST Framework, Django Ninja",
@@ -61,13 +61,13 @@ export const skillsetContent = [
   {
     title: "DevOps & Deployment",
     description:
-      "I manage the deployment and delivery of applications using Docker to ensure consistency across environments. I work with cloud infrastructure to support scalability, use Git for version control, and implement CI/CD workflows to streamline releases and updates. I also design and build websites using WordPress, creating custom templates and handling site redesigns.",
+      "I manage the deployment and delivery of applications using Docker to ensure consistency across environments. I work with cloud infrastructure to support scalability, use Git for version control, and implement CI/CD workflows to streamline releases and updates. I also build websites with WordPress, using templates and configuring them for efficient content management.",
     skills: ["Docker, Kubernetes, AWS", "Nginx, Git, CMS Development"],
   },
   {
     title: "UI/UX & 3D Web Development",
     description:
-      "Combining my strong design intuition from a marketing background with technical expertise, I create visually engaging interfaces using Tailwind CSS and Bootstrap 5. I also have foundational experience in Three.js (R3F, Drei) & Spline, allowing me to integrate 3D elements & interactive experiences into web applications.",
+      "I combine a strong design sense from my marketing background with technical skills to build responsive, visually engaging interfaces using Tailwind CSS for rapid, component-driven styling in React and Next.js. With foundational experience in Three.js (R3F, Drei) and Spline, I integrate 3D elements and interactive visuals to create more immersive user experiences.",
     skills: [
       "Three.js(R3F, Drei), Spline",
       "Tailwind CSS, Bootstrap 5",
@@ -178,7 +178,7 @@ export const projectCaseContent = [
       "Successfully executed a comprehensive website redesign and content migration for Argyle Consulting Company, utilising WordPress to deliver a modern, engaging, and user-friendly online presence.",
     tags: ["WordPress", "CMS", "UX Design", "Financial Services", "Elementor"],
     year: "2024",
-    location: "Falkirk, UK",
+    location: "Glasgow, UK",
     role: "UI improvements",
     mainImg: {
       src: "/images/peanut-icon-2.png",
@@ -310,5 +310,109 @@ export const projectCaseContent = [
 
     githubLink: "https://github.com/Catslife66/josiegal",
     liveSite: "",
+  },
+  {
+    num: "04",
+    slug: "serverless-web-application",
+    name: "Serverless Web Application",
+    description:
+      "A serverless application that allows users to save, edit, and manage bookmarks from any device. Built with SST on AWS, it integrates OpenAuth for secure GitHub authentication and Neon Postgres for a scalable, secure, and cost-effective database solution.",
+    tags: [
+      "Next.js",
+      "SST",
+      "AWS",
+      "CRUD",
+      "Github Actions",
+      "Serverless",
+      "CI/CD Automation",
+    ],
+    year: "2025",
+    location: "Falkirk, UK",
+    role: "Full-stack Programmer",
+    mainImg: {
+      src: "/images/peanut-icon-4.png",
+      alt: "serverless app icon",
+    },
+    bannerImg: {
+      src: "/images/serverless-app-banner.jpg",
+      alt: "serverless application illustration",
+    },
+    objectives: [
+      {
+        order: "01",
+        content:
+          "Build a full-stack serverless application with secure user authentication.",
+      },
+      {
+        order: "02",
+        content:
+          "Enable CRUD operations for bookmarks, ensuring that each user only accesses their own data.",
+      },
+      {
+        order: "03",
+        content:
+          "Use type-safe, validated APIs to prevent runtime errors and ensure data integrity.",
+      },
+      {
+        order: "04",
+        content:
+          "Deploy with minimal infrastructure management using SST to AWS.",
+      },
+      {
+        order: "05",
+        content:
+          "Set up continuous integration and deployment for automated updates.",
+      },
+    ],
+    features: [
+      {
+        order: "01",
+        content:
+          "GitHub OAuth authentication via OpenAuth for secure, password-free login.",
+      },
+      {
+        order: "02",
+        content: "Bookmark CRUD operations with user-specific access control.",
+      },
+      {
+        order: "03",
+        content: "Serverless backend deployed on AWS Lambda with API Gateway.",
+      },
+      {
+        order: "04",
+        content:
+          "Type-safe database queries with Drizzle ORM and Neon Postgres.",
+      },
+      {
+        order: "05",
+        content:
+          "Automated deployment pipeline via GitHub Actions with SST Secrets.",
+      },
+    ],
+    outcomes: [
+      {
+        order: "01",
+        content:
+          "Demonstrated expertise in serverless architecture, authentication, and secure CRUD APIs.",
+      },
+      {
+        order: "02",
+        content:
+          "Applied type-safe ORM workflows and API validation for production-grade reliability.",
+      },
+      {
+        order: "03",
+        content:
+          "Built a fully automated CI/CD pipeline for zero-downtime deployments.",
+      },
+      {
+        order: "04",
+        content:
+          "Strengthened full-stack skills across backend APIs, frontend integration, and AWS deployment.",
+      },
+    ],
+
+    githubLink: "https://github.com/Catslife66/sst-bookmarks",
+    liveSite: "https://d3u6kyynj8n3kx.cloudfront.net/",
   },
 ];

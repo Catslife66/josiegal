@@ -52,8 +52,7 @@ export default function IntroSection() {
               />
 
               <h2 className="text-themeYellow text-8xl font-bold text-nowrap py-8 px-4">
-                The journey starts with 5 year marketing in hospitality
-                industry.
+                The journey starts here.
               </h2>
             </div>
           </div>

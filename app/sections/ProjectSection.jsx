@@ -105,9 +105,9 @@ export default function ProjectSection() {
   return (
     <div id="projectWrapper" className="bg-themeGray relative">
       <ProjectSectionHeading />
-      <div className="pt-[4rem] pb-[8rem] grid grid-cols-12">
+      <div id="projectList" className="pt-[4rem] pb-[8rem] grid grid-cols-12">
         <div className="col-span-10 col-start-2 md:col-span-9 md:col-start-3 lg:col-span-8 lg:col-start-4">
-          <div className="flex flex-col min-h-[80vh]">
+          <div className="flex flex-col min-h-[100vh]">
             {projectCaseContent.map((project, idx) => (
               <div
                 key={idx}

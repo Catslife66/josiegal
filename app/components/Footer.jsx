@@ -85,7 +85,7 @@ export default function Footer() {
           <div className="flex flex-row items-center space-x-1 justify-center mt-8">
             <span className="text-xs">© 2025</span>
             <span className="text-xs">All rights preserve.</span>
-            <span className="text-xs ms-1">- v 1.1.0</span>
+            <span className="text-xs ms-1">- v 1.1.1</span>
           </div>
         </div>
       </div>

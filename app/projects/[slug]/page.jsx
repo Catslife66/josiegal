@@ -38,23 +38,58 @@ export default function ProjectDetail(props) {
           <div className="col-span-3 border-t-1 content-center">
             {project.role}
           </div>
-          <div className="col-span-2 border-y-1 content-center">View Demo</div>
-          <Link
-            className="col-span-3 border-y-1 flex flex-row items-center"
-            href={project.liveSite ? project.liveSite : project.githubLink}
-          >
-            {project.liveSite ? "Visit link" : "Source code"}
-            <svg
-              className="ms-2"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="white"
-            >
-              <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z" />
-            </svg>
-          </Link>
+          {project.liveSite && (
+            <>
+              <div
+                className={`${
+                  project.githubLink ? "border-t-1" : "border-y-1"
+                } col-span-2 content-center`}
+              >
+                Live Site
+              </div>
+              <Link
+                className={`${
+                  project.githubLink ? "border-t-1" : "border-y-1"
+                } col-span-3 flex flex-row items-center`}
+                href={project.liveSite}
+              >
+                Visit link
+                <svg
+                  className="ms-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="white"
+                >
+                  <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z" />
+                </svg>
+              </Link>
+            </>
+          )}
+          {project.githubLink && (
+            <>
+              <div className="col-span-2 border-y-1 content-center">
+                Source Code
+              </div>
+              <Link
+                className="col-span-3 border-y-1 flex flex-row items-center"
+                href={project.githubLink}
+              >
+                Visit github repo
+                <svg
+                  className="ms-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="white"
+                >
+                  <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z" />
+                </svg>
+              </Link>
+            </>
+          )}
         </div>
       </div>
 
@@ -143,7 +178,7 @@ export default function ProjectDetail(props) {
           <Link
             key={idx}
             href={`/projects/${proj.slug}`}
-            className="col-span-5 cursor-pointer"
+            className="col-span-10 md:col-span-5 cursor-pointer py-4 mb-4 md:py-8"
           >
             <div className="flex flex-row justify-center w-fit pb-2 border-b-1">
               <span>View Project</span>
@@ -164,6 +199,25 @@ export default function ProjectDetail(props) {
             </h4>
           </Link>
         ))}
+        <div className="col-span-10 cursor-pointer py-4 mb-4 md:col-span-5 md:py-8">
+          <Link
+            href={"/"}
+            className="flex flex-row justify-center w-fit pb-2 border-b-1"
+          >
+            <span>Back to Homepage</span>
+            <span className="ms-1 flex justify-center items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16px"
+                viewBox="0 -960 960 960"
+                width="16px"
+                fill="white"
+              >
+                <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
+              </svg>
+            </span>
+          </Link>
+        </div>
       </div>
     </div>
   );
