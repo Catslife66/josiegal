@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { Libre_Franklin } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "./themeProvider";
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
             {children}
             <Footer />
           </SmoothScroll>
+          <Analytics />
         </body>
       </ThemeProvider>
     </html>
